@@ -4,9 +4,10 @@ This is a starter repo for the Capstone project in the [Udacity C++ Nanodegree P
 
 <img src="snake_game.gif"/>
 
-The Capstone Project gives you a chance to integrate what you've learned throughout this program. This project will become an important part of your portfolio to share with current and future colleagues and employers.
-
-In this project, you can build your own C++ application or extend this Snake game, following the principles you have learned throughout this Nanodegree Program. This project will demonstrate that you can independently create applications using a wide range of C++ features.
+Few new features has been added to original game. 
+1. Game can be pause and resume anytime with spacebar key (User score can be seen on terminal.
+2. Color of Snake and color of food chnages based on users score.
+3. Speed of snake changes after every 5 points.
 
 ## Dependencies for Running Locally
 * cmake >= 3.7
@@ -44,3 +45,36 @@ This work is licensed under a
 [cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
+
+## Project Specification
+
+### README (All Rubric Points REQUIRED)
+
+| _Done_  | _Criteria_                                                           | _Meets Specifications_                                                                                                                                                                                                                                                                      |
+| :-----: | :------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| &#9745; | A `README` with instructions is included with the project            | The README is included with the project and has instructions for building/running the project. <br><br>If any additional libraries are needed to run the project, these are indicated with cross-platform installation instructions.<br><br>You can submit your writeup as markdown or pdf. |
+| &#9745; | The `README` indicates which project is chosen.                      | The `README` describes the project you have built.<br><br>The `README` also indicates the file and class structure, along with the expected behavior or output of the program.                                                                                                              |
+| &#9745; | The `README` includes information about each rubric point addressed. | The `README` indicates which rubric points are addressed. The `README` also indicates where in the code (i.e. files and line numbers) that the rubric points are addressed.                                                                                                                 |
+
+### Compiling and Testing (All Rubric Points REQUIRED)
+
+| _Done_  | _Criteria_                           | _Meets Specifications_                                                                                                                                                                                                      |
+| :-----: | :----------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| &#9745; | The submission must compile and run. | The project code must compile and run without errors. We strongly recommend using `cmake` and `make`, as provided in the starter repos. If you choose another build system, the code must compile on any reviewer platform. |
+
+### Loops, Functions, I/O
+
+| _Done_  | _Criteria_                                                                                     | _Meets Specifications_                                                                                                   |
+| :-----: | :--------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------- |
+| &#9745; | The project demonstrates an understanding of C++ functions and control structures.             | A variety of control structures are used in the project.<br><br>The project code is clearly organized into functions.    |
+| &#9745; | The project accepts user input and processes the input.                                        | The project accepts input from a user as part of the necessary operation of the program.                                 |
+
+### Object Oriented Programming
+
+| _Done_  | _Criteria_                                                           | _Meets Specifications_                                                                                                                                                                 |
+| :-----: | :------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| &#9745; | The project uses Object Oriented Programming techniques.             | The project code is organized into classes with class attributes to hold the data, and class methods to perform tasks.                                                                 |
+| &#9745; | Classes use appropriate access specifiers for class members.         | All class data members are explicitly specified as public, protected, or private                                                                                                       |
+| &#9745; |	Class constructors utilize member initialization lists.				 | All class members that are set to argument values are initialized through member initialization lists.	                                                                              |																																																			  |
+| &#9745; | Classes abstract implementation details from their interfaces.       | All class member functions document their effects, either through function names, comments, or formal documentation. Member functions do not change program state in undocumented ways.|
+| &#9745; | Classes encapsulate behavior.                                        | Appropriate data and functions are grouped into classes. Member data that is subject to an invariant is hidden from the user. State is accessed via member functions.                  |
