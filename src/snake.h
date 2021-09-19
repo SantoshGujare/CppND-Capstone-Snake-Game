@@ -27,6 +27,7 @@ class Snake {
   float head_x;
   float head_y;
   std::vector<SDL_Point> body;
+  bool pause;
 
  private:
   void UpdateHead();
@@ -35,6 +36,7 @@ class Snake {
   bool growing{false};
   int grid_width;
   int grid_height;
+  
 };
 
 #endif
