@@ -24,9 +24,19 @@ void Game::Run(Controller const &controller, Renderer &renderer,
 
     // Input, Update, Render - the main game loop.
     controller.HandleInput(running, snake);
-    Update();
-    renderer.Render(snake, food);
-
+    //Update();
+    if (!snake.pause) 
+    { 
+      Update(); 
+    }
+    else
+    {
+       std::cout << "Game Paused!\n";
+       std::cout << "Press space-bar to resume !\n";
+       std::cout << "Score: " << score << "\n";
+       std::cout << "Size: " << snake.size << "\n";
+    }
+    renderer.Render(snake, food, score);
     frame_end = SDL_GetTicks();
 
     // Keep track of how long each loop through the input/update/render cycle
@@ -76,10 +86,13 @@ void Game::Update() {
   // Check if there's food over here
   if (food.x == new_x && food.y == new_y) {
     score++;
-    PlaceFood();
+    PlaceFood();    
     // Grow snake and increase speed.
     snake.GrowBody();
-    snake.speed += 0.02;
+    if((score % 5) == 0)
+    {
+      snake.speed += 0.03;
+    }
   }
 }
 
