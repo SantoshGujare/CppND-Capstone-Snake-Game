@@ -4,9 +4,9 @@ This is a starter repo for the Capstone project in the [Udacity C++ Nanodegree P
 
 <img src="snake_game.gif"/>
 
-Few new features has been added to original game. 
-1. Game can be pause and resume anytime with spacebar key (User score can be seen on terminal.
-2. Color of Snake and color of food chnages based on users score.
+Few new features have been added to the original game.  
+1. Game can be pause and resume anytime with space-bar key (User score can be seen on terminal.
+2. Color of Snake and color of food changes based on user's score.
 3. Speed of snake changes after every 5 points.
 
 ## Dependencies for Running Locally
